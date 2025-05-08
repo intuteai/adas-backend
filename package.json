@@ -1,14 +1,14 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "ADAS backend",
   "license": "ISC",
-  "author": "",
   "type": "commonjs",
-  "main": "index.js",
+  "main": "dist/app.js",
   "scripts": {
-    "start": "ts-node app.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node dist/app.js",
+    "build": "tsc",
+    "dev": "ts-node app.ts"
   },
   "dependencies": {
     "body-parser": "^2.2.0",
